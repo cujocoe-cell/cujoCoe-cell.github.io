@@ -1,36 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CujoCoe Cell</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #111;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-    </style>
-</head>
-<body>
-    <div>
-     <h1>Cujo’s Neighborhood Rise</h1>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cujo’s Neighborhood Rise</title>
 
-        <p>Hosted for free. Built with control. No templates.</p>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --gold: #c6a84a;
+    --charcoal: #111111;
+    --dark: #000000;
+    --warm: #f4f1ea;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--dark);
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+.hero {
+    height: 100vh;
+    background: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 320px;
+    max-width: 80%;
+    margin-bottom: 30px;
+}
+
+.mission {
+    max-width: 750px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.button-group a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 28px;
+    border: 2px solid var(--gold);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.button-group a:hover {
+    background: var(--gold);
+    color: black;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.light-section {
+    background: var(--warm);
+    color: var(--charcoal);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-top: 15px;
+    font-size: 1.3rem;
+}
+
+.infrastructure-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.infrastructure-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    background: #000;
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: var(--gold);
+    text-decoration: none;
+    margin: 0 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <img src="logo-bw.png" alt="Cujo’s Neighborhood Rise Logo">
+    <div class="mission">
+        We build permanent, human-centered infrastructure rooted in loyalty,
+        service, and second chances.
     </div>
+    <div class="button-group">
+        <a href="#projects">Explore Projects</a>
+        <a href="#donate">Support the Mission</a>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 style="text-align:center;">Our Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Cujo’s Ranch</h3>
+            <p>Land-based rehabilitation and workforce integration.</p>
+        </div>
+        <div class="project-card">
+            <h3>Veterans Housing</h3>
+            <p>Permanent housing rooted in dignity and stability.</p>
+        </div>
+        <div class="project-card">
+            <h3>Emerging Infrastructure</h3>
+            <p>Energy, mobility, and scalable development systems.</p>
+        </div>
+        <div class="project-card">
+            <h3>Coming Soon</h3>
+            <p>Future expansion initiatives in development.</p>
+        </div>
+    </div>
+</section>
+
+<!-- INFRASTRUCTURE -->
+<section class="light-section">
+    <h2 style="text-align:center;">Sustainability & Infrastructure</h2>
+    <div class="infrastructure-grid">
+        <div class="infrastructure-item">
+            <h3>Solar Microgrids</h3>
+            <p>Independent renewable systems designed for long-term resilience.</p>
+        </div>
+        <div class="infrastructure-item">
+            <h3>EV Fleet & Charging</h3>
+            <p>All-electric mobility and integrated charging networks.</p>
+        </div>
+        <div class="infrastructure-item">
+            <h3>Cujo’s Café</h3>
+            <p>Community-based workforce and sustainability hub.</p>
+        </div>
+        <div class="infrastructure-item">
+            <h3>Workforce Integration</h3>
+            <p>Resident-first employment opportunities with professional standards.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EXECUTIVE SUMMARY -->
+<section>
+    <h2 style="text-align:center;">Executive Summary</h2>
+    <p style="max-width:800px; margin:40px auto; text-align:center; line-height:1.8;">
+        Cujo’s Neighborhood Rise is a community-based development initiative focused on building
+        permanent and transitional infrastructure rooted in stability, service, and sustainability.
+        Through housing, renewable energy systems, workforce pathways, and integrated commerce,
+        the organization advances scalable models designed for long-term independence and measurable impact.
+        This is structured, durable rise.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    <p>Cujo’s Neighborhood Rise</p>
+    <p>501(c)(3) Application Pending</p>
+    <br>
+    <a href="#">Donate</a>
+    <a href="#">Shop</a>
+    <a href="#">Sponsors</a>
+    <a href="#">Contact</a>
+    <br><br>
+    <p>© 2026 Cujo’s Neighborhood Rise</p>
+</div>
+
 </body>
 </html>
